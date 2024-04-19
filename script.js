@@ -54,12 +54,11 @@ let arr = [
     },
   ];
 
-// TASK1: "name"-i "t" herfi ile bashlayan obyektleri yeni arraya yigin (filter)
-//   const yeniarrey =[]
+  // TASK1: "name"-i "t" herfi ile bashlayan obyektleri yeni arraya yigin (filter)
 
-//    const result=arr.filter((item)=>item.name.toLowerCase()[0]=="a")
+  // let arrupdate=arr.filter((item)=>item.name.toLowerCase().startsWith("t"))
 
-//    result.push(yeniarrey)
+  // console.log(arrupdate)
 
 
 
@@ -96,12 +95,13 @@ let arr = [
 
 
 // arr.forEach((item)=>{
-//     if (item.name.endsWith ("e")) {
-//         item.name.replace("superdiv")
-//     }
+//   if (item.name.toLowerCase().endsWith("e")) {
+  
+//     item.name=("superdev")
+    
+//   }
 // })
-
-
+// console.log(arr)
 
 
 
@@ -144,16 +144,53 @@ let arr = [
 // TASK8: "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin. (filter)
 
 
-// let result =arr.filter((item)=>(item.name.length==4))
+// let result =arr.filter((item)=>item.name.length===4)
 
 // console.log(result)
-// TASK10:     keylərin cəmini tapın
-// let cemi =0 ;
 
-// arr.forEach((item)=>{cemi+=item.key})
 
-// console.log(cemi);
 
+
+
+
+
+
+
+
+// TASK10 KEYlerin cemini tapin
+
+// let sum= 0;
+
+// arr.forEach((item)=>{ if (item.key>0) 
+// {console.log(sum =sum +item.key)
+  
+// }})
+
+
+// console.log(arr.reduce((sum,item)=> sum+item.key ,0))
+
+
+
+
+
+
+
+
+
+// TASK11 //  terkibinde ən az 2 't' herfi olan obyekt(ler)i tapın.
+
+// console.log(arr.filter((item)=>item.name.toLowerCase().indexOf("t")!== 
+// item.name.toLowerCase().lastIndexOf("t")))
+
+
+
+
+
+// TASK12 key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
+
+// let filtered = arr.filter((item)=>item.name.toLowerCase().startsWith("l")
+// && item.key>10)
+// console.log(filtered)
 
 
 
